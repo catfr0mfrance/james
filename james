@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+
+import random
+import sys
+
+fuck = [
+	"i fuck hate you",
+    "kill yourself",
+    "praise mawie",
+    "idfk bro",
+    "just ignore your issues",
+    "just go on grinder lil bro",
+    "ye ref",
+    "start ww3 instead of asking me this",
+    "drink sunflower water",
+    "change your gender instead",
+    "ask chatgpt",
+    "im not verity bro",
+    "eat my microchip penis",
+    "bite my shiny metal ass",
+    "bitch",
+    "just go on tinder lil bro",
+    "go read yuri",
+    "go read yaoi",
+]
+
+shit = [
+	"i fuck hate you",
+    "yes",
+    "no",
+    "maybe",
+    "idfk bro",
+    "kill yourself",
+    "ye ref",
+    "ask chatgpt",
+    "im not verity bro",
+    "get naked on a bus",
+    "dont get naked on a bus",
+    "will yeah",
+]
+
+def question():
+	yesno = input("is it yes or no question?: ")
+
+	if yesno == "no":
+		wordsandshit = random.choice(fuck)
+		print(wordsandshit)
+	elif yesno == "yes":
+		wordsandshit = random.choice(shit)
+		print(wordsandshit)
+	else:
+		print("fuck off")
+
+while True:
+	question()
+
+	followup = input("do you have more questions?: ")
+
+	if followup == "no":
+		print("bye")
+		sys.exit(0)
+	elif followup == "yes":
+		continue
+	else:
+		print("bye")
+		sys.exit(0)
